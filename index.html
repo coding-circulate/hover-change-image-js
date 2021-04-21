@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Nav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation ">
+        <div class="nav-area">
+            <ul>
+                <li>
+                    <a href="#" onmouseenter="changeImg('images/bag.jpeg')">Bag</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImg('images/sneakers.jpeg')">Shoe</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImg('images/hoodie.jpeg')">Hoodie</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImg('images/watch.jpg')">Watch</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImg('images/shirt.jpg')">Shirt</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImg('images/coat.jpeg')">Coat</a>
+                </li>
+            </ul>
+        </div>
+        <div class="image-Area">
+            <img src="images/bag.jpeg" id="slider" alt="">
+        </div>
+    </div>
+
+    <script>
+        function changeImg(imgChanger) {
+            document.getElementById('slider').src = imgChanger;
+        }
+    </script>
+</body>
+
+</html>
